@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Nhập a:<input type="text" id="txtSoa">
+Nhập b:<input type="text" id="txtSob"><button type="button" onclick="ketQua()">Tính</button>
+<p id="result"></p>
+
+
+<script>
+  function ketQua(){
+    let giaTria=parseInt(document.getElementById('txtSoa').value)
+    let giaTrib=parseInt(document.getElementById('txtSob').value)
+      let tong=0;
+
+      for(let i=giaTria;i<=giaTrib;i++)
+      {
+          tong=tong+i;
+      }
+
+    document.getElementById('result').innerHTML='Giá Trị là '+tong;
+
+
+
+  }
+
+
+
+</script>
+</body>
+</html>

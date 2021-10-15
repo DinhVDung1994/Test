@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Nhập a:<input type="text" id="txtSoa"><button type="button" onclick="ketQua()">Tính</button>
+<p id="result"></p>
+<p id="result1"></p>
+<script>
+    function ketQua(){
+        let giaTri=parseInt(document.getElementById('txtSoa').value)
+        let chuVi=giaTri*4
+        let dienTich=giaTri*giaTri
+
+        document.getElementById('result').innerHTML='Chu Vi hình vuông là :'+chuVi;
+        document.getElementById('result1').innerHTML='Diện Tích hình vuông là :'+dienTich;
+    }
+
+
+
+</script>
+</body>
+</html>

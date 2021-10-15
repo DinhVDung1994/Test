@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+Nhập năm:<input type="text" id="txtSoa"><button type="button" onclick="ketQua()">Tính</button>
+<p id="result"></p>
+
+
+<script>
+  function ketQua(){
+    let giaTria=parseInt(document.getElementById('txtSoa').value)
+
+      if (giaTria<1000){
+          document.getElementById('result').innerHTML='Bạn Đang ở thế kỉ thứ X';
+      }else if (giaTria<2000){
+          document.getElementById('result').innerHTML='Bạn Đang ở thế kỉ thứ XX';
+      }else if(giaTria>=2000) {
+          document.getElementById('result').innerHTML='Bạn Đang ở thế kỉ 21';
+      }else {
+          alert('Mời Bạn Nhập Năm Kiểm Tra');
+      }
+
+
+
+
+
+  }
+
+
+
+</script>
+
+</body>
+</html>

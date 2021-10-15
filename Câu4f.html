@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+Nhập a:<input type="text" id="txtSoa"><br>
+Nhập b:<input type="text" id="txtSob"><button type="button" onclick="ketQua()">Tính</button><br>
+Nhập c:<input type="text" id="txtSoc">
+<p id="result"></p>
+
+
+<script>
+    function ketQua(){
+        let a=parseInt(document.getElementById('txtSoa').value)
+        let b=parseInt(document.getElementById('txtSob').value)
+        let c=parseInt(document.getElementById('txtSoc').value)
+
+        if (a==b&&a==c&&b==c){
+            document.getElementById('result').innerHTML='Giá trị 3 cạnh vừa nhập là tam giác đều';
+        }else if ((a*a)+(b*b)===(c*c)){
+            document.getElementById('result').innerHTML='Giá trị 3 cạnh vừa nhập là tam giác vuông';
+        }else
+        if (a+b>c&&a+c>b&&b+c>a){
+            document.getElementById('result').innerHTML='3 cạnh vừa nhập là 3 cạnh của 1 tam giac';
+        }else {
+            document.getElementById('result').innerHTML='3 cạnh vừa nhập không phải là 3 cạnh của 1 tam giác';
+        }
+
+
+
+    }
+
+
+
+</script>
+</body>
+
+</html>
